@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #3D087B;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap:20px;
+    /* height: 100vh; */
+    margin-top: 30px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid1{
+    grid-column: 1/2;
+    width: 100%;
+}
+.grid2{
+    grid-column: 2/-1;
+    width: 100%;
+}
+.setTime{
+ height: 300px;
+ width: 100%;
+ background-color: white;
+ border-radius: 20px;
+ margin-top: 20px;
+ padding: 20px;
+ }
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    justify-items:center; 
+}
+select{
+    width: 50%;
+    padding: 7px;
+    color: #5F0089;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+   cursor: pointer;
+}
+form>div{
+    color: #5F0089;
+    justify-self: baseline;
+}
+
+h1{
+    background-color: #5F0089;
+    padding: 10px 5px 10px 5px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0 20px 0;
+    font: normal normal 900 18px/24px Bauhaus Hv BT;;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    font-size: 20px;
+    height: 40px;
+    display: inline-block;
+    color: white;
+    width: 50%;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right,#8E53F0, #FC5EFF);
+}
+button:hover{
+    background: linear-gradient(to left, #8E53F0,#FC5EFF);
+
+}
+#showtime{
+    width: 40%;
+    height: 120px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 5px;
+    background-color: #5F0089;
+    border-radius: 10px;
+    color: #FC5EFF;
+}
+.realtime{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 10px;
+}
+.realtime div:first-child{
+    color: #3D087B;
+    font-weight: 700;
+}
+.realtime>div{
+    height: 70px;
+    width: 60px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.realtime2{
+    width: 80%;
+    height: 20px;
+    margin: auto;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    opacity: 0.82;
+    margin-top: -10px;
+}
+.realtime3{
+    width: 70%;
+    height: 35px;
+    margin: auto;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    opacity: 0.22;
+    margin-top: -25px;
+}
+
+#hours{
+    background-image: url("timeline.svg");
+    color: #8A11BF;
+}
+#minute{
+    background-image: url("timeline.svg");
+    background-size: 100% 100%;
+    color: #8A11BF;
+
+}
+#seconds{
+    background-image: url("timeline.svg");
+    color: #8A11BF;
+
+}
+#am_pm{
+    background-image: url("AM_svg.svg");
+    color: #8A11BF;
+
+}
+#image{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+#message{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+    color:#8E53F0;
+    font: normal normal 900 26px/36px Bauhaus Hv BT;;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}

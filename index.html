@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Digital Clock</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid1">
+
+            <img src="clock_logo.png" alt="" height="50px">
+            <div class="setTime">
+                <form action="">
+                    <div class="box">
+                        <img src="wake_up.svg" alt="">
+                        <label for="wakeup">Set Wake up time</label>
+                        <select name="wakeup" id="wakeup">
+                            <!-- <option value="10AM-11AM">10AM-11AM</option>
+                            <option value="12AM-1PM">12AM-1PM</option>
+                            <option value="4PM-5PM">4PM-5PM</option>
+                            <option value="9PM-10PM">9PM-10PM</option> -->
+                        </select>
+                    </div>
+                    <div class="box">
+                        <img src="lunch_time.svg" alt="">
+                        <label for="lunch_time">Set Lunch time</label>
+                        <select name="lunch_time" id="lunch_time">
+                           <!-- <option value="10AM-11AM">10AM-11AM</option>
+                            <option value="12AM-1PM">12AM-1PM</option>
+                            <option value="4PM-5PM">4PM-5PM</option>
+                            <option value="9PM-10PM">9PM-10PM</option>-->
+                        </select> 
+                    </div>
+                    <div class="box">
+                        <img src="nap_time.svg" alt="">
+                        <label for="nap_time">Set nap time</label>
+                        <select name="nap_time" id="nap_time">
+                           <!--  <option value="10AM-11AM">10AM-11AM</option>
+                            <option value="12AM-1PM">12AM-1PM</option>
+                            <option value="4PM-5PM">4PM-5PM</option>
+                            <option value="9PM-10PM">9PM-10PM</option>-->
+                        </select> 
+                    </div>
+                    <div class="box">
+                        <img src="nap_time.svg" alt="">
+                        <label for="night">Set night time</label>
+                        <select name="night" id="night">
+                            <!-- <option value="10AM-11AM">10AM-11AM</option>
+                            <option value="12AM-1PM">12AM-1PM</option>
+                            <option value="4PM-5PM">4PM-5PM</option>
+                            <option value="9PM-10PM">9PM-10PM</option> -->
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <h1></h1>
+            <div class="flexbox">
+                <button onmouseenter="partyTime()" onmouseleave="setAlarm()">Set Alarm</button>
+                <div id="showtime"></div>
+            </div>
+        </div>
+        <div class="grid2">
+            
+            <div class="realtime">
+                <div>TIME</div>
+                <div id="hours">10</div>
+                <span>:</span>
+                <div id="minute">10</div>
+                <span>:</span>
+                <div id="seconds">11</div>
+                <div id="am_pm"></div>
+            </div>
+            <div class="realtime2"></div>
+            <div class="realtime3"></div>
+            
+        
+                <div id="message" class="flex"></div>
+            <img src="" alt="time_changing image" id="image">
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
