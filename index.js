@@ -14,19 +14,16 @@ function updateTime() {
   let now = new Date();
   let seconds = now.getSeconds();
   let minute = now.getMinutes();
-  let hours = now.getHours() > 12 ? now.getHours() - 12 : now.getHours();
+  let hours = now.getHours();
   let am_pm = now.getHours() >= 12 ? "PM" : "AM";
 
 
-  document.getElementById("seconds").innerText =`${seconds} \n sec`;
-  document.getElementById("minute").innerText = `${minute} \n min`;
-  document.getElementById("hours").innerText = `${hours} \n hour`;
-  document.getElementById("am_pm").innerText = am_pm;
-
+  
+console.log(hours)
  
   //------------------- content after 10AM---------------------------------
   
-  if ((hours >= 10) && (am_pm == 'AM')) {
+  if (hours >=10 && hours<12) {
     document
     .getElementById("image")
     .setAttribute("src", "gm_image.svg");
@@ -36,21 +33,21 @@ function updateTime() {
     document.querySelector("h1").innerText = "GOOD MORNING!! WAKE UP !!";
   }
   // ----------------------content after 12PM------------------------------
-  else if ((hours = 12)  && (hours < 4) && (am_pm == 'PM')) {
+  else if (hours>=12 && hours<16) {
     document.getElementById("image").setAttribute("src", "gdafternoon_image.svg");
     document.getElementById("message").innerHTML = " LET'S HAVE SOME LUNCH!!!";
     document.querySelector("h1").innerText =
       "GOOD AFTERNOON !! TAKE SOME SLEEP";
   }
   //-----------------------content after 4PM-------------------------
-  else if ((hours >= 4) && (am_pm == 'PM')){
+  else if (hours >= 16 && hours < 22){
     document.getElementById("image").setAttribute("src", "lunch_image.png");
     document.getElementById("message").innerHTML =
       "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
     document.querySelector("h1").innerText = "GOOD EVENING !!";
   }
   //-------------------------content after 9 PM---------------------------------
-  else if (((hours >= 9) && (am_pm == 'PM')) || ((hours <10) && (am_pm=='AM'))) {
+  else if (hours >= 22){
     document.getElementById("image").setAttribute("src", "goodnight_image.svg");
     document.getElementById("message").innerHTML =
       " CLOSE YOUR EYES AND GO TO SLEEP";
@@ -61,7 +58,13 @@ function updateTime() {
     document.querySelector("h1").innerText =
       "GOOD AFTERNOON !! TAKE SOME SLEEP";
   }
-  
+
+   hours = now.getHours() > 12 ? now.getHours() - 12 : now.getHours();
+
+  document.getElementById("seconds").innerText =`${seconds} \n sec`;
+  document.getElementById("minute").innerText = `${minute} \n min`;
+  document.getElementById("hours").innerText = `${hours} \n hour`;
+  document.getElementById("am_pm").innerText = am_pm;
 }
 
 
