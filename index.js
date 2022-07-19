@@ -53,10 +53,10 @@ console.log(hours)
       " CLOSE YOUR EYES AND GO TO SLEEP";
     document.querySelector("h1").innerText = "GOOD NIGHT !!";
   }else{
-    document.getElementById("image").setAttribute("src", "gdafternoon_image.svg");
-    document.getElementById("message").innerHTML = " LET'S HAVE SOME LUNCH!!!";
-    document.querySelector("h1").innerText =
-      "GOOD AFTERNOON !! TAKE SOME SLEEP";
+     document.getElementById("image").setAttribute("src", "goodnight_image.svg");
+    document.getElementById("message").innerHTML =
+      " CLOSE YOUR EYES AND GO TO SLEEP";
+    document.querySelector("h1").innerText = "GOOD NIGHT !!";
   }
 
    hours = now.getHours() > 12 ? now.getHours() - 12 : now.getHours();
